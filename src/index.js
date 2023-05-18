@@ -1,15 +1,22 @@
 function main() {
-  // PURPOSE
-  // JSON STRING TO OBJECT LITERALS
-  let jsonStr = `{ "id": 1, "name": "rohit", "email": "rohit@gmail.com" }`;
-  let obj = JSON.parse(jsonStr);
+  let obj = { id: 1, name: "rohit" };
+  console.log(obj.name);
 
-  console.log(typeof jsonStr);
-  console.log(typeof obj);
+  // Modify The Member
+  obj.name = "rohit sharma";
+  obj.id = 11;
+  console.log(obj.name);
 
-  // OBJECT LITERAL TO JSON STRING
-  let str1 = JSON.stringify(obj);
-  console.log(str1);
+  // Add More Members
+  obj.email = "rohit@gmail.com";
+  obj.mobile = "122121";
+
+  console.log(obj);
+
+  // Delete the member
+  delete obj.id;
+
+  console.log(obj);
 }
 
 main();

@@ -1,13 +1,15 @@
 function main() {
-  // simplest list
-  // Declar list of string
-  let list = [];
-  let list1 = ["delhi"];
-  let list2 = ["delhi", "calcutta"];
-  let list3 = ["delhi", "calcutta", "chennai"];
+  // Access the element of list
+  let list = ["delhi", "calcutta", "chennai", "kochi", "tvdm"];
 
-  console.log(list2);
-  console.log(list3);
+  // Access single elment at time:: USING INDEX
+  console.log(list[0]);
+  console.log(list[2]);
+
+  // Iterate all the element of list
+  for (let item of list) {
+    console.log(item);
+  }
 }
 
 main();

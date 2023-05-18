@@ -1,10 +1,16 @@
 function main() {
-  // Access the element of list
-  let list = ["delhi", "calcutta", "chennai", "kochi", "tvdm"];
+  let list = ["delhi", "calcutta"];
 
-  // Access single elment at time:: USING INDEX
-  console.log(list[0]);
-  console.log(list[2]);
+  // Modify the List :: Existing member
+  list[0] = "New Delhi";
+  list[1] = "Mumbai";
+
+  // Add New Item in the list
+  list.push("pune");
+  list.push("nagpur");
+
+  // Remove Item from the list
+  list.pop();
 
   // Iterate all the element of list
   for (let item of list) {

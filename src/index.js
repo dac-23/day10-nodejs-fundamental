@@ -1,23 +1,13 @@
 function main() {
-  let obj = { id: 1, name: "rohit" };
-  console.log(obj.name);
-  console.log(obj["name"]);
+  // simplest list
+  // Declar list of string
+  let list = [];
+  let list1 = ["delhi"];
+  let list2 = ["delhi", "calcutta"];
+  let list3 = ["delhi", "calcutta", "chennai"];
 
-  // Modify The Member
-  obj.name = "rohit sharma"; // using dot operator
-  obj["id"] = 11; // using bracket operator
-  console.log(obj.name);
-
-  // Add More Members
-  obj.email = "rohit@gmail.com"; // using the dot operator
-  obj["mobile"] = "122121"; // using the bracket operator
-
-  console.log(obj);
-
-  // Delete the member
-  delete obj.id;
-
-  console.log(obj);
+  console.log(list2);
+  console.log(list3);
 }
 
 main();
